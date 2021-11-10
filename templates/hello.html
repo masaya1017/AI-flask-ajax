@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block content %}
+<h1>三種の挨拶</h1>
+<p>ボタンをクリックするたびに三種類の挨拶から一つ出力されるぞ！</p>
+<input type="button" value='挨拶' onclick="post_greeting()">
+<br>
+<p>挨拶：<span id="greeting">上のボタンを押してね</span></p>
+<img id="greeting_image" width="256" height="256" src="http://urx3.nu/Zlxt">
+<script src="../static/js/hello.js"></script>
+{% endblock %}
